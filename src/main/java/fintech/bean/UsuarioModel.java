@@ -12,7 +12,6 @@ public class UsuarioModel {
 	private LocalDate nascimento;
 	private EnderecoModel endereco;
 	private String senha;
-	private UsuarioAutenticaModel usuarioAutentica;
 	
 	public UsuarioModel() {
 		
@@ -20,7 +19,7 @@ public class UsuarioModel {
 	}
 
 	public UsuarioModel(int idUsuario, long cpf, String nome, long telefone, String email, LocalDate nascimento,
-			EnderecoModel endereco, String senha, UsuarioAutenticaModel usuarioAutentica) {
+			EnderecoModel endereco, String senha) {
 		super();
 		this.idUsuario = idUsuario;
 		this.cpf = cpf;
@@ -30,7 +29,6 @@ public class UsuarioModel {
 		this.nascimento = nascimento;
 		this.endereco = endereco;
 		this.senha = senha;
-		this.usuarioAutentica = usuarioAutentica;
 	}
 
 	public int getIdUsuario() {
@@ -96,13 +94,4 @@ public class UsuarioModel {
 	public void setEndereco(EnderecoModel endereco) {
 		this.endereco = endereco;
 	}
-
-	public UsuarioAutenticaModel getUsuarioAutentica() {
-		return usuarioAutentica;
-	}
-
-	public void setUsuarioAutentica(UsuarioAutenticaModel usuarioAutentica) {
-		this.usuarioAutentica = usuarioAutentica;
-	}
-
 }
