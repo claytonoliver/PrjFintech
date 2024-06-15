@@ -2,7 +2,7 @@ package fintech.dao;
 
 import fintech.Factory.ConnectionFactory;
 import fintech.bean.CategoriaModel;
-import fintech.interfaces.ICategoriaDAO;
+import fintech.interfaces.ICategoria;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -11,7 +11,7 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
-public class OracleCategoriaDAO implements ICategoriaDAO {
+public class OracleCategoriaDAO implements ICategoria {
     private Connection conexao;
 
     public OracleCategoriaDAO(Connection conexao) {
