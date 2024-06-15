@@ -1,13 +1,8 @@
 package fintech.dao;
 
 import fintech.Factory.ConnectionFactory;
-import fintech.Interfaces.ICategoria;
-import fintech.bean.CategoriaModel;
-<<<<<<< Updated upstream
 import fintech.interfaces.ICategoria;
-=======
->>>>>>> Stashed changes
-
+import fintech.bean.CategoriaModel;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
@@ -15,11 +10,8 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
-<<<<<<< Updated upstream
-public class OracleCategoriaDAO implements ICategoria {
-=======
 public class OracleCategoriaDao implements ICategoria {
->>>>>>> Stashed changes
+
     private Connection conexao;
 
     public OracleCategoriaDao(Connection conexao) {
