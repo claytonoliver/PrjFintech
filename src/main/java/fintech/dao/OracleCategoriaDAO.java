@@ -1,8 +1,13 @@
 package fintech.dao;
 
 import fintech.Factory.ConnectionFactory;
+<<<<<<< Updated upstream
 import fintech.interfaces.ICategoria;
 import fintech.bean.CategoriaModel;
+=======
+import fintech.bean.CategoriaModel;
+import fintech.interfaces.ICategoria;
+>>>>>>> Stashed changes
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
